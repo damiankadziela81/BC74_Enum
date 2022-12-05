@@ -26,6 +26,10 @@ public class Main {
         Planet myPlanet = Planet.MARS;
 
         canILiveHere(myPlanet);
+
+        for(Planet planet: Planet.values()){
+            System.out.println(planet.ordinal() + "\t" + planet.name() + "\t" + planet.moons);
+        }
     }
 
     static void canILiveHere(Planet myPlanet) {
